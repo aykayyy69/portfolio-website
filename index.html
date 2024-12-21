@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anup Kharel</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .nav {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 1em;
+        }
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .nav a:hover {
+            color: blue;
+            transform: scale(1.1);
+        }
+        .container {
+            text-align: center;
+            animation: fadeIn 2s ease-out;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            background-image: url('https://i.im.ge/2024/12/21/zxSMPK.Finalll-honi.jpeg'); /* Updated with your picture URL */
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto 20px;
+            animation: zoomIn 1s ease-out;
+        }
+        .name {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: darkblue;
+            animation: slideUp 1s ease-out;
+        }
+        .qualification {
+            font-size: 1.2em;
+            color: navy;
+            margin: 10px 0;
+            animation: slideUp 1s ease-out;
+        }
+        .social-links {
+            margin: 20px 0;
+            position: absolute;
+            bottom: 30px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 3s ease-out;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .social-links img {
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            transition: transform 0.3s, filter 0.3s;
+        }
+        .social-links img:hover {
+            transform: scale(1.2);
+            filter: brightness(1.2);
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            font-size: 0.9em;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            animation: slideUp 2s ease-out;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.8);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @keyframes slideUp {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        function showWorkInProgress() {
+            alert('Work in Progress.');
+        }
+    </script>
+</head>
+<body>
+    <div class="nav">
+        <a href="#" onclick="showWorkInProgress()">Home</a>
+        <a href="#" onclick="showWorkInProgress()">About</a>
+        <a href="#" onclick="showWorkInProgress()">Services</a>
+        <a href="#" onclick="showWorkInProgress()">Portfolio</a>
+        <a href="#" onclick="showWorkInProgress()">Contact</a>
+    </div>
+    <div class="container">
+        <div class="profile-picture"></div>
+        <div class="name">Anup Kharel</div>
+        <div class="qualification">Pursuing B.Sc. CSIT(TU)</div>
+    </div>
+    <div class="footer">
+        &copy; 2024 Anup Kharel
+    </div>
+    <div class="social-links">
+        <a href="https://www.youtube.com/@anup.kharel" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+        </a>
+        <a href="https://www.instagram.com/_anupkhrl_/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/username.xaina.2006/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+        </a>
+        <a href="https://www.linkedin.com/in/anup-kharel-14298121a/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/aykayyy69" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+        </a>
+    </div>
+</body>
+</html>
